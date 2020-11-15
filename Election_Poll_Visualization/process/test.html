@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+
+<div id="vis1"></div>
+<script type="text/javascript">
+   let jsonSpec1="resource/vis1.json";
+   vegaEmbed('#vis1', jsonSpec1,{theme: 'latimes',"renderer":"svg"}).then(function(result) {
+   }).catch(console.error);
+</script>
+
+<div id="vis2"></div>
+<script type="text/javascript">
+   let jsonSpec2="resource/vis2.json";
+   vegaEmbed('#vis2', jsonSpec2,{theme: 'latimes',"renderer":"svg"}).then(function(result) {
+   }).catch(console.error);
+</script>
+
+<div id="vis3"></div>
+<script type="text/javascript">
+   let jsonSpec3="resource/vis3.json";
+   vegaEmbed('#vis3', jsonSpec3,{theme: 'latimes',"renderer":"svg"}).then(function(result) {
+   }).catch(console.error);
+</script>
+
+</body>
+</html>

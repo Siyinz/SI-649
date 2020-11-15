@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Transitive by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Article for SI 649 Lab 5</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="resource/templated-transitive/assets/css/main.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.4.0"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@4"></script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">Article <span>SI 649 Lab 5</span></a></div>
+			</header>
+
+		<!-- Three -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<h2>Insight one</h2>
+										<p>Donald Trump's approval rate was steadily going up after the Democratic Debate, and got a relatively high approval percentage in Feburary 2020 after Iowa caucus. The increasing approval rate in Feburary mainly results from the increasing population voting for Trump in the adult group.</p>
+									</header>
+									<hr />
+                                    <div id="vis1"></div>
+                                    <script type="text/javascript">
+                                    let jsonSpec1="resource/vis1.json";
+                                    vegaEmbed('#vis1', jsonSpec1,{theme: 'latimes',"renderer":"svg"}).then(function(result) {
+                                    }).catch(console.error);
+                                    </script>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<h2>Insight two</h2>
+										<p>In the Swing state of Michigan, Pennsylvania and Wisconsin, for most of the time, Biden's approval rate is higher than Trump's.</p>
+									</header>
+									<hr />
+									<div id="vis2"></div>
+                                    <script type="text/javascript">
+                                    let jsonSpec2="resource/vis2.json";
+                                    vegaEmbed('#vis2', jsonSpec2,{theme: 'latimes',"renderer":"svg"}).then(function(result) {
+                                    }).catch(console.error);
+                                    </script>
+                                </div>
+							</div>
+						</div>
+
+                        <div>
+							<div class="box">
+								<div class="image fit">
+									
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<h2>Insight three</h2>
+										<p>For the state of California, all the democratic candidates got higher approval percentages than Trump.</p>
+									</header>
+									<hr />
+									<div id="vis3"></div>
+                                    <script type="text/javascript">
+                                    let jsonSpec3="resource/vis3.json";
+                                    vegaEmbed('#vis3', jsonSpec3,{theme: 'latimes',"renderer":"svg"}).then(function(result) {
+                                    }).catch(console.error);
+                                    </script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+	</body>
+</html>
